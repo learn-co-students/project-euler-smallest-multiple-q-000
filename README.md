@@ -9,7 +9,7 @@
 ## Instructions
 - Code your procedural solution into the `lib/smallest_multiple.rb` file.
 - Code your object-oriented solution into the `lib/oo_smallest_multiple.rb` file.
-- Run your `rspec` test suite, and make each RSpec test pass.
+- Run `learn` until you get all of the RSpec tests to pass.
 
 ## Source
 - [Project Euler](https://projecteuler.net/) - [Problem 5](https://projecteuler.net/problem=5)
