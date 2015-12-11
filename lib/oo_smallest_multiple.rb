@@ -1,28 +1,23 @@
 class SmallestMultiple
-  def initialize (input)
-    @input = input
-  end
-  def input=(input)
-    @input = input
-  end
-  def input
-    @input
-  end
-  def lcm
-  (1..1000000000).each do |x|
-     count = 0
-    (1..@input).each do |y|
-      if x % y != 0
-        count += 1
-      end
-    end
-    if count == 0
-      return x
-      break
-    end
+  attr_accessor :lcm
+  def initialize(input)
+    @placeholder = 1
+    @lcm = find_multiple(input)
   end
 
-  
-end
+  def find_multiple(input)
+    (2..input).each do |i|
+      @placeholder *= i / gcd(@placeholder, i)
+    end
+    @placeholder
+  end
 
+  def gcd(a, b)
+    while b > 0
+      a %= b
+      return b if a == 0
+      b %= a
+    end
+    a
+  end
 end
