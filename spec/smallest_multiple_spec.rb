@@ -11,7 +11,6 @@ describe "smallest_multiple(input)" do
       expect(smallest_multiple(10)).to eq(2520)
     end
 
-    it 'returns the LCM for 20' do
-      expect(smallest_multiple(20)).to eq(232792560)
-    end
+
+    
   end
