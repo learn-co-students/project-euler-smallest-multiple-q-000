@@ -1,17 +1,19 @@
-describe "smallest_multiple(input)" do
-    it 'returns the LCM for 5' do
-      expect(smallest_multiple(5)).to eq(60)
+describe "SmallestMultiple" do
+  describe "#lcm" do
+    it 'returns the LCM for 60' do
+      expect(SmallestMultiple.new(5).lcm).to eq(60)
     end
 
-    it 'returns the LCM for 7' do
-      expect(smallest_multiple(7)).to eq(420)
+    it 'returns the LCM for 420' do
+      expect(SmallestMultiple.new(7).lcm).to eq(420)
     end
 
-    it 'returns the LCM for 10' do
-      expect(smallest_multiple(10)).to eq(2520)
+    it 'returns the LCM for 2520' do
+      expect(SmallestMultiple.new(10).lcm).to eq(2520)
     end
 
     it 'returns the LCM for 20' do
-      expect(smallest_multiple(20)).to eq(232792560)
+      expect(SmallestMultiple.new(20).lcm).to eq(232792560)
     end
   end
+end
